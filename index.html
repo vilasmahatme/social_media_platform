@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2 - Social Media Platform</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo"><i class="fa-solid fa-share-nodes"></i> DevConnect</div>
+      <div class="user-pill" id="nav-user-pill">
+        <img src="" id="nav-avatar" class="avatar-sm" alt="Profile">
+        <span id="nav-username">Loading...</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-layout">
+    
+    <!-- Left Sidebar / User Profile Section -->
+    <aside class="sidebar">
+      <div class="profile-card" id="profile-card">
+        <div class="profile-banner"></div>
+        <div class="profile-info">
+          <img src="" id="profile-avatar" class="avatar-lg" alt="Avatar">
+          <h2 id="profile-name">Loading...</h2>
+          <p id="profile-handle" class="text-muted">@loading</p>
+          <p id="profile-bio" class="bio-text"></p>
+          
+          <div class="stats-row">
+            <div class="stat-box">
+              <span class="stat-number" id="stat-followers">0</span>
+              <span class="stat-label">Followers</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number" id="stat-following">0</span>
+              <span class="stat-label">Following</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Center Feed Section -->
+    <main class="feed-container">
+      <!-- Create Post Box -->
+      <div class="create-post-card">
+        <h3><i class="fa-regular fa-pen-to-square"></i> Share an update</h3>
+        <textarea id="post-input" placeholder="What's on your mind?"></textarea>
+        <div class="create-post-actions">
+          <button id="btn-submit-post" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Post</button>
+        </div>
+      </div>
+
+      <!-- Feed Posts Header -->
+      <div class="feed-header">
+        <h3><i class="fa-solid fa-newspaper"></i> Activity Feed</h3>
+      </div>
+
+      <!-- Posts List Container -->
+      <div id="posts-list" class="posts-list">
+        <!-- Dynamically Rendered via JS -->
+      </div>
+    </main>
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
